@@ -53,6 +53,13 @@ nnoremap gV `[v`]
 nnoremap <leader>a :Ag
 nnoremap <leader>T :call ToggleNumber()
 
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " CtrlP settings
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
