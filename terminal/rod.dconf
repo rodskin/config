@@ -1,5 +1,8 @@
 [/]
 audible-bell=false
+custom-command='tmux'
 default-size-columns=240
 default-size-rows=100
+login-shell=false
+use-custom-command=true
 visible-name='Rod'
