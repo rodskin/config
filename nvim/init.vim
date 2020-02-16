@@ -1,4 +1,4 @@
-source ./myplugins.vim
+source ~/config/nvim/myplugins.vim
 
 colorscheme badwolf" awesome colorscheme
 syntax enable           " enable syntax processing
@@ -20,6 +20,8 @@ nnoremap <leader><space> :nohlsearch<CR>
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
+set splitbelow
+set splitright
 " space open/closes folds
 nnoremap <space> za
 set foldmethod=indent   " fold based on indent level
@@ -57,12 +59,4 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
-" toggle between number and relativenumber
-function! ToggleNumber()
-    if(&relativenumber == 1)
-        set norelativenumber
-        set number
-    else
-        set relativenumber
-    endif
-endfunc
+source ~/config/nvim/myfunctions.vim

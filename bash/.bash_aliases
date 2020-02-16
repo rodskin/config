@@ -10,8 +10,15 @@ if [[ "$(ls --version >/dev/null 2>&1 && echo '1' || echo '0')" == "1" ]]; then
 else
     alias ll="ls -alhG "
 fi
+alias git="git -c color.ui=auto"
+alias gitst="git status --short"
+alias gitstu="git status --short -uno"
+alias gitfa="git fetch --all"
+alias gitpure="git pull --rebase=preserve"
+alias gitmerge="git merge --no-ff"
 alias ag="ag -Us --ignore='*.min.js' --ignore='*.min.css' --ignore='/cache/' --ignore='/tmp/' "
 alias grep="grep --color"
+# special functions
 alias curdate='date +%Y%m%d%H%M%S'
 alias generate_password="openssl rand -base64 37 | cut -c1-16"
 alias generate_strong_password="head -n 999 /dev/urandom | grep -ao '[[:graph:]]' | tr -d '\n' | grep -o '^.\{32\}' | head -n 1"
