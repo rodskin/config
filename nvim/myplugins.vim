@@ -8,14 +8,20 @@ Plug 'universal-ctags/ctags'
 Plug 'itchyny/lightline.vim'
 Plug 'amiorin/vim-project'
 Plug 'mhinz/vim-startify'
-Plug 'StanAngeloff/php.vim'
 Plug 'stephpy/vim-php-cs-fixer'
-Plug 'ncm2/ncm2'
-Plug 'phpactor/phpactor'
-Plug 'phpactor/phpactor'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'nelsyeung/twig.vim'
+Plug 'preservim/nerdtree'
+Plug 'StanAngeloff/php.vim'
+" Include Phpactor
+Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+
+" Require ncm2 and this plugin
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'phpactor/ncm2-phpactor'
 call plug#end()

@@ -1,6 +1,6 @@
 source ~/config/nvim/myplugins.vim
 
-colorscheme badwolf" awesome colorscheme
+colorscheme dracula     " awesome colorscheme
 syntax enable           " enable syntax processing
 set noswapfile      " no swap file! This is just annoying
 set tabstop=4       " number of visual spaces per TAB
@@ -51,6 +51,9 @@ inoremap <Up>    <NOP>
 inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
 
 
 " CtrlP settings
