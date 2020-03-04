@@ -1,4 +1,4 @@
-call plug#begin('~/nvim/plugged')
+call plug#begin('/home/fgilles/nvim/plugged')
 Plug 'rking/ag.vim'
 Plug 'sjl/gundo.vim'
 Plug 'sjl/badwolf', { 'as': 'badwolf' }
