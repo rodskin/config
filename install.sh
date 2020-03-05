@@ -17,3 +17,10 @@ git clone https://github.com/pa-de-solminihac/sitesync.git
 # sudo apt install php7.3-zip
 # installer mariadb
 
+
+
+mkdir ~/dev
+mkdir ~/dev/php
+mkdir ~/dev/nodejs
+mkdir ~/dev/tmp
+mkdir ~/dev/dump_saves
