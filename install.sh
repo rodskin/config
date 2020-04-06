@@ -42,6 +42,17 @@ git clone https://github.com/pa-de-solminihac/sitesync.git
 # sudo apt install php7.3-zip
 # installer mariadb
 
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+
+
+
+sudo a2enmod ssl
+sudo a2enmod headers
+sudo a2ensite default-ssl
+sudo a2enconf ssl-params
+sudo apache2ctl configtest
+sudo systemctl restart apache2
 
 
 mkdir ~/dev
