@@ -17,6 +17,7 @@ Plug 'honza/vim-snippets'
 Plug 'nelsyeung/twig.vim'
 Plug 'preservim/nerdtree'
 Plug 'StanAngeloff/php.vim'
+Plug 'vim-syntastic/syntastic'
 " Include Phpactor
 Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
 

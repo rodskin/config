@@ -46,5 +46,17 @@ nmap <Leader>ot :call phpactor#GotoDefinitionTab()<CR>
 nmap <Leader>K :call phpactor#Hover()<CR>
 autocmd FileType php setlocal omnifunc=phpactor#Complete
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+au BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
+
 
 source ~/config/nvim/myfunctions.vim
