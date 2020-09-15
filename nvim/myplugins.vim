@@ -16,13 +16,20 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'nelsyeung/twig.vim'
 Plug 'preservim/nerdtree'
-Plug 'StanAngeloff/php.vim'
 Plug 'vim-syntastic/syntastic'
-" Include Phpactor
+Plug 'yegappan/mru'
+Plug 'chrisbra/SudoEdit.vim'
+
+Plug 'ycm-core/YouCompleteMe'
+
+" PHP Plugins
+Plug 'StanAngeloff/php.vim'
 Plug 'phpactor/phpactor' ,  {'do': 'composer install', 'for': 'php'}
+Plug 'vim-php/phpctags'
+Plug 'phpactor/ncm2-phpactor'
+Plug 'rayburgemeestre/phpfolding.vim'
 
 " Require ncm2 and this plugin
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
-Plug 'phpactor/ncm2-phpactor'
 call plug#end()
